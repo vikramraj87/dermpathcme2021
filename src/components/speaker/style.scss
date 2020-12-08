@@ -1,0 +1,37 @@
+.speaker {
+  background-color: var(--color-secondary-light);
+  position: relative;
+
+  height: 20rem;
+  margin-top: 8rem;
+  border-radius: 0.5rem;
+  padding: 9rem 2rem 1rem;
+
+  font-size: 1.6rem;
+
+  &__image {
+    display: block;
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--color-secondary-light);
+    position: absolute;
+    top: -7.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 16px #ddd;
+  }
+
+  &--wrap {
+    filter: drop-shadow(0 1px 8px rgba(0, 0, 0, 0.2));
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__loc {
+    line-height: 1.2;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+  }
+}

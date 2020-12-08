@@ -1,0 +1,58 @@
+.hero {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-dark);
+  font-size: 2rem;
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--dim-min-gutter), 1fr)
+    var(--dim-center-content)
+    minmax(var(--dim-min-gutter), 1fr);
+
+  //align-items: center;
+  text-align: center;
+  height: calc(90vh - 8rem);
+
+  &__content {
+    grid-column: 2 / -2;
+    margin: 15rem 0 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__presents {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+
+  &__event {
+    color: var(--color-secondary-light);
+    line-height: 1.4;
+    font-size: 4.9rem;
+  }
+
+  &__date {
+    font-size: 3.1rem;
+  }
+
+  &__highlights {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      font-size: 2.4rem;
+    }
+
+    .number {
+      color: var(--color-accent-light);
+      font-size: 7.2rem;
+    }
+  }
+}

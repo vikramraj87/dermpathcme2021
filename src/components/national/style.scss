@@ -1,0 +1,24 @@
+.national {
+  padding: 12rem 0;
+  background-color: var(--color-secondary-light);
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--dim-min-gutter), 1fr)
+    var(--dim-center-content)
+    minmax(var(--dim-min-gutter), 1fr);
+
+  font-size: 2rem;
+
+  &__content {
+    grid-column: 2 / -2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 10rem;
+  }
+}
