@@ -6,6 +6,8 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import International from "./components/international";
 import National from "./components/national";
+import Register from "./components/register";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <International />
       <National />
+      <Register />
+      <Contact />
     </Fragment>
   );
 }

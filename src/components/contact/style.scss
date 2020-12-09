@@ -1,0 +1,23 @@
+.contact {
+  padding: 2rem 0;
+  background-color: var(--color-primary);
+  color: var(--color-secondary-dark);
+
+  display: grid;
+  grid-template-columns:
+    minmax(var(--dim-min-gutter), 1fr)
+    var(--dim-center-content)
+    minmax(var(--dim-min-gutter), 1fr);
+
+  font-size: 1.2rem;
+
+  &__content {
+    grid-column: 2 / -2;
+  }
+
+  h5 {
+    margin-bottom: 10rem;
+    font-family: var(--font-primary);
+    font-weight: normal;
+  }
+}
