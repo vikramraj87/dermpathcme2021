@@ -36,7 +36,7 @@
     list-style: none;
 
     li {
-      margin-left: 1.2rem;
+      margin-left: 2.2rem;
     }
   }
 
@@ -46,5 +46,14 @@
         margin-left: 4rem;
       }
     }
+  }
+
+  .button {
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  img {
+    width: 2.6rem;
   }
 }

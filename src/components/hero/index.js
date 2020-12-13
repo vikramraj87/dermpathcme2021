@@ -1,12 +1,14 @@
 import React from "react";
 import "./style.scss";
 
+import RegisterButton from "../register_button";
+
 export default () => {
   return (
     <section className="hero">
       <div className="hero__content">
         <p className="hero__presents">
-          Christian Medical College proudly presents
+          Department of Pathology, Christian Medical College presents
         </p>
         <h1 className="hero__event">
           Virtual Annual Conference of Dermatopathology Society of India
@@ -26,15 +28,16 @@ export default () => {
               <span className="number">12</span>National speakers
             </li>
             <li>
-              <span className="number">14</span>Credit hours
+              <span className="number">28</span>Virtual slides
+            </li>
+            <li>
+              <span className="number">14</span>Credit hours*
             </li>
           </ul>
         </div>
 
         <div className="hero__cta">
-          <a href="#" className="button">
-            Register Now
-          </a>
+          <RegisterButton />
         </div>
       </div>
     </section>

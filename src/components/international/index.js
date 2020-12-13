@@ -11,6 +11,8 @@ import rajendra from "./photos/rajendra_singh.jpg";
 import sara from "./photos/sara.jpg";
 import winny from "./photos/winny.JPG";
 
+import RegisterButton from "../register_button";
+
 export default () => {
   return (
     <section className="international">
@@ -61,9 +63,7 @@ export default () => {
           />
         </div>
 
-        <a href="#" className="button">
-          Register Now
-        </a>
+        <RegisterButton />
       </div>
     </section>
   );

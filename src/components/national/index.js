@@ -16,6 +16,8 @@ import umanahar from "./photos/umanahar.jpg";
 import venkataram from "./photos/venkataram.jpg";
 import meera from "./photos/meera.jpg";
 
+import RegisterButton from "../register_button";
+
 export default () => {
   return (
     <section className="national">
@@ -96,9 +98,7 @@ export default () => {
           />
         </div>
 
-        <a href="#" className="button">
-          Register Now
-        </a>
+        <RegisterButton />
       </div>
     </section>
   );
