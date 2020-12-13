@@ -11,7 +11,7 @@
 
   &__content {
     grid-column: 2 / -2;
-    & > div:nth-child(even) {
+    & > div:nth-child(odd) {
       background-color: var(--color-secondary-light);
     }
   }
@@ -19,6 +19,15 @@
   h3 {
     text-align: center;
     margin-bottom: 4rem;
+  }
+
+  &__nav {
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+
+  &__next {
+    text-align: right;
   }
 }
 

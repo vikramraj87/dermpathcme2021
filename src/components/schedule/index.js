@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.scss";
 
+import { Switch, Route, Link } from "react-router-dom";
+
 import * as speakers from "../speakers";
 
 const schedule_15 = {
@@ -150,8 +152,12 @@ const schedule_16 = {
       topic: "2018 WHO update on melanocytic neoplasms",
     },
     {
-      time: "8:05 PM",
+      time: "7:35 PM",
       topic: "Q & A",
+    },
+    {
+      time: "8:05 PM",
+      topic: "Valedictory",
     },
   ],
 };
@@ -186,17 +192,65 @@ const Event = ({ event }) => {
   }
 };
 
-export default () => {
-  const events_1 = schedule_15.events.map((event) => {
+const Schedule15 = () => {
+  const events_15 = schedule_15.events.map((event) => {
     return <Event event={event} />;
   });
+
   return (
     <div className="schedule">
       <div className="schedule__content">
-        <h3>Schedule for January 15, 2021</h3>
-
-        {events_1}
+        <h3>January 15, 2021</h3>
+        <p className="schedule__nav schedule__next">
+          <Link to="/schedule/16" className="accent">
+            January 16, 2021 &rarr;
+          </Link>
+        </p>
+        {events_15}
+        <p className="schedule__nav schedule__next">
+          <Link to="/schedule/16" className="accent">
+            January 16, 2021 &rarr;
+          </Link>
+        </p>
       </div>
     </div>
+  );
+};
+
+const Schedule16 = () => {
+  const events_16 = schedule_16.events.map((event) => {
+    return <Event event={event} />;
+  });
+
+  return (
+    <div className="schedule">
+      <div className="schedule__content">
+        <h3>January 16, 2021</h3>
+        <p className="schedule__nav schedule__prev">
+          <Link to="/schedule" className="accent">
+            &larr; January 15, 2021
+          </Link>
+        </p>
+        {events_16}
+        <p className="schedule__nav schedule__prev">
+          <Link to="/schedule" className="accent">
+            &larr; January 15, 2021
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default () => {
+  return (
+    <Switch>
+      <Route path="/schedule/16">
+        <Schedule16 />
+      </Route>
+      <Route path="/schedule/">
+        <Schedule15 />
+      </Route>
+    </Switch>
   );
 };

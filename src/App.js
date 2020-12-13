@@ -14,14 +14,6 @@ import Schedule from "./components/schedule";
 
 function App() {
   return (
-    // <Fragment>
-    //   <Header />
-    //   <Hero />
-    //   <International />
-    //   <National />
-    //   <Register />
-    //   <Contact />
-    // </Fragment>
     <Router>
       <Header />
 

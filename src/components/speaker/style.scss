@@ -7,7 +7,7 @@
   border-radius: 0.5rem;
   padding: 9rem 2rem 1rem;
 
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   &__image {
     display: block;
@@ -27,9 +27,11 @@
 
   &__name {
     font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 
-  &__loc {
+  &__place,
+  &__centre {
     line-height: 1.2;
     font-size: 1.4rem;
     margin-top: 0.2rem;

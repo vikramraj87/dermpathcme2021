@@ -44,7 +44,7 @@ const asha = {
 
 const inchara = {
   name: "Dr. Inchara YK",
-  centre: "St. John's Medical College, Bangalore",
+  centre: "St. John's Medical College",
   place: "Bangalore",
   dp: inchara_dp,
 };
@@ -135,7 +135,7 @@ const sujay = {
 
 const umanahar = {
   name: "Dr. Uma Nahar Saikia",
-  centre: "Post Graduate Institute of Medical Education & Research",
+  centre: "PGIMER",
   place: "Chandigarh",
   dp: umanahar_dp,
 };

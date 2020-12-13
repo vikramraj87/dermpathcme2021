@@ -28,7 +28,10 @@ export default () => {
             <p className="register__type__head">PG residents / Fellows</p>
             <p className="register__type__conditions">
               Scanned copy of a letter signed by their respective HODs must be
-              sent to <a href="mailto:dermpathcmc2021@gmail.com">Email</a>
+              sent to{" "}
+              <a href="mailto:dermpathcmc2021@gmail.com" className="accent">
+                Email
+              </a>
             </p>
             <p className="register__type__price">&#8377; 500</p>
           </div>
@@ -54,6 +57,7 @@ export default () => {
             <a
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=pbyATdD_bUGdaCEPhdsO0dxg93Wgm-VLu-Pw_VN4RBdUQTlXSzFRWkdHRzVVT09QTzI1SzhJTE81VS4u"
               target="_blank"
+              className="accent"
             >
               this link
             </a>
